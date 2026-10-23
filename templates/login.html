@@ -1,0 +1,9 @@
+<!doctype html>
+<title>ログイン</title>
+<h1>ログイン</h1>
+{% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+<form method="post">
+  <label>メールアドレス <input name="email" type="email"></label><br>
+  <label>パスワード <input name="password" type="password"></label><br>
+  <button type="submit">ログイン</button>
+</form>
